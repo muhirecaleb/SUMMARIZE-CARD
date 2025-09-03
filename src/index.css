@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+background-color: black;
+ font-family: sans-serif;
+  background-image: repeating-linear-gradient(to right, transparent 0 50px, rgb(188, 179, 179,0.1) 50px 51px),
+    repeating-linear-gradient(to top, transparent 0 50px, rgba(153, 135, 135, 0.178) 50px 51px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+p {
+  color: white;
+}
+
+
+.fadeUp {
+  animation: fade-up 0.5s ease-out forwards;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delete:hover .el{
+  opacity: 1;
+}
