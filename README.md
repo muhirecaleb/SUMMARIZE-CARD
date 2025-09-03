@@ -1,12 +1,90 @@
-# React + Vite
+SUMMARIZE-CARD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web app that lets you upload documents and uses AI to summarize them into flash cards for easier studying and revision.
 
-Currently, two official plugins are available:
+Built with React, Tailwind CSS, React-Toastify, and powered by Gemini API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
 
-## Expanding the ESLint configuration
+📂 Upload documents
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🤖 AI summarization using Gemini API
+
+🃏 Generate interactive flash cards
+
+🎨 Clean UI with Tailwind CSS
+
+🔔 Notifications with React-Toastify
+
+🚀 Installation
+
+Clone the repository:
+
+git clone https://github.com/muhirecaleb/SUMMARIZE-CARD.git
+cd SUMMARIZE-CARD
+
+
+Install dependencies:
+
+npm install
+
+
+Add your Gemini API key in data.js:
+
+// data.js
+export const GEMINI_API_KEY = "your_api_key_here";
+
+
+Run the app:
+
+npm run dev
+
+📖 Usage
+
+Open http://localhost:5173/ in your browser.
+
+Upload your document (PDF, text, etc.).
+
+The AI will summarize it.
+
+Flash cards are generated for you to review and study.
+
+🛠️ Tech Stack
+
+React — UI framework
+
+Tailwind CSS — Styling
+
+React-Toastify — Notifications
+
+Vite — Fast dev server and bundler
+
+Gemini API — AI text summarization
+
+📂 Project Structure
+.
+├── public/          # Static assets
+├── src/             # React components & logic
+│   ├── components/  # UI components
+│   ├── pages/       # Page components
+│   ├── data.js      # Gemini API key
+│   └── App.js       # Main app
+├── package.json     # Dependencies & scripts
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+
+⚠️ Notes
+
+You must add your own Gemini API key in data.js.
+
+Keep your API key private and never commit it to GitHub.
+
+🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+
+📜 License
+
+This project is licensed under the MIT License
+.
